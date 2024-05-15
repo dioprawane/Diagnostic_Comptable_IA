@@ -1,0 +1,15 @@
+{
+    "Actif": {
+      "Immobilisations corporelles": 50000,
+      "Stocks": 20000,
+      "Créances clients": 15000,
+      "Disponibilités": 10000
+    },
+    "Passif": {
+      "Capital social": 40000,
+      "Réserves": 20000,
+      "Dettes fournisseurs": 25000,
+      "Dettes bancaires": 10000
+    }
+  }
+  

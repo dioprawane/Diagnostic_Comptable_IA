@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat de l'Analyse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Résultat de l'Analyse</h1>
+        <h2>Contenu Original</h2>
+        <pre>{{ content }}</pre>
+        <h2>Analyse</h2>
+        <pre>{{ result }}</pre>
+        <a href="{{ url_for('index') }}">Retour</a>
+    </div>
+</body>
+</html>

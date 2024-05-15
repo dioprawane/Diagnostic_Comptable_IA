@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Outil de Diagnostic Comptable</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Outil de Diagnostic Comptable</h1>
+        <form action="{{ url_for('diagnose') }}" method="post" enctype="multipart/form-data">
+            <label for="analysis_type">Choisissez le type d'analyse :</label>
+            <select name="analysis_type" id="analysis_type">
+                <option value="entries">Écritures Comptables</option>
+                <option value="statement">État Financier</option>
+            </select>
+            <textarea name="content" rows="10" cols="50" placeholder="Collez vos écritures comptables ou votre état financier ici..."></textarea>
+            <label for="file">Ou téléchargez un fichier :</label>
+            <input type="file" name="file" id="file">
+            <button type="submit">Analyser</button>
+        </form>
+    </div>
+</body>
+</html>
